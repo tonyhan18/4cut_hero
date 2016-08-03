@@ -1,0 +1,6 @@
+All the Character's name is small letter
+All the Folder's state letter is Big letter
+
+
+//depth
+character -10
