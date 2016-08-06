@@ -26,10 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Jena_Storm
+grav = 1.5;
+spd = 8;
+acc = 2;
 hspd = 0;
 vspd = 0;
-state = jena_idle_state;
+state = jena_move_state;
 
+//take a input
+get_input();
 </string>
           </argument>
         </arguments>
@@ -53,6 +58,7 @@ state = jena_idle_state;
           <argument>
             <kind>1</kind>
             <string>///execute the state
+get_input();
 script_execute(state);
 </string>
           </argument>

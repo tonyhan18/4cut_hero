@@ -9,21 +9,30 @@
     <sprites name="Jena_Storm">
       <sprite>sprites\spr_jena_storm_idle</sprite>
     </sprites>
+    <sprites name="Level">
+      <sprite>sprites\spr_dirt</sprite>
+      <sprite>sprites\spr_solid</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\script2.gml</script>
     <scripts name="Helper_Script">
       <script>scripts\move.gml</script>
+      <script>scripts\get_input.gml</script>
+      <script>scripts\add_friction.gml</script>
     </scripts>
     <scripts name="Jena_Storm">
-      <script>scripts\jena_idle_state.gml</script>
+      <script>scripts\jena_move_state.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Obj_Jena_Storm">
       <object>objects\obj_jena_storm</object>
+    </objects>
+    <objects name="level">
+      <object>objects\obj_solid</object>
+      <object>objects\obj_dirt</object>
     </objects>
   </objects>
   <rooms name="rooms">
