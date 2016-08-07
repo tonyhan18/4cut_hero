@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Initialize Jena_Storm
 grav = 1.5;
-spd = 8;
+spd = 5;
 acc = 2;
 hspd = 0;
 vspd = 0;

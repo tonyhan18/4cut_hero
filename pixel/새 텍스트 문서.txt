@@ -1,1 +1,1 @@
-character 192 x 96
+character 256 x 256
