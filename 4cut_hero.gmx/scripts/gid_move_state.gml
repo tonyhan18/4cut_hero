@@ -1,4 +1,4 @@
-///jena_move_state()
+///gid_move_state()
 if(!place_meeting(x,y+1,obj_solid)){
     vspd+=grav;
     
@@ -9,6 +9,12 @@ if(!place_meeting(x,y+1,obj_solid)){
     vspd = 0;
     if(up){
         vspd =-16;
+    }
+    if(hspd!=0){
+        sprite_index = spr_gid_toben_walk;
+        image_speed = .4;
+    }else{
+        sprite_index = spr_gid_toben_idle;
     }
 }
 
@@ -23,5 +29,7 @@ if(right || left){
     add_friction(acc);
 }
 
-if(hspd!=0) image_xscale = sign(hspd);
+if(hspd!=0) {
+    image_xscale = sign(hspd);
+}
 

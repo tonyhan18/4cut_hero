@@ -13,6 +13,13 @@
       <sprite>sprites\spr_dirt</sprite>
       <sprite>sprites\spr_solid</sprite>
     </sprites>
+    <sprites name="Gid_Toben">
+      <sprite>sprites\spr_gid_toben_idle</sprite>
+      <sprite>sprites\spr_gid_toben_walk</sprite>
+    </sprites>
+    <sprites name="Helper_Sprite">
+      <sprite>sprites\spr_maks</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -22,8 +29,8 @@
       <script>scripts\get_input.gml</script>
       <script>scripts\add_friction.gml</script>
     </scripts>
-    <scripts name="Jena_Storm">
-      <script>scripts\jena_move_state.gml</script>
+    <scripts name="Gid_Toben">
+      <script>scripts\gid_move_state.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -33,6 +40,12 @@
     <objects name="level">
       <object>objects\obj_solid</object>
       <object>objects\obj_dirt</object>
+    </objects>
+    <objects name="Obj_Jid_Toben">
+      <object>objects\obj_gid_toben</object>
+    </objects>
+    <objects name="Obj_Helper">
+      <object>objects\obj_mask</object>
     </objects>
   </objects>
   <rooms name="rooms">
