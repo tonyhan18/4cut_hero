@@ -12,7 +12,7 @@ if(!place_meeting(x,y+1,obj_solid)){
     }
     if(hspd!=0){
         sprite_index = spr_gid_toben_walk;
-        image_speed = .4;
+        image_speed = .3;
     }else{
         sprite_index = spr_gid_toben_idle;
     }

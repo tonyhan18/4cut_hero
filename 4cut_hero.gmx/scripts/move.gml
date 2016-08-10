@@ -14,7 +14,7 @@ x+=hspd;
 //Vertical Collision
 if(place_meeting(x,y+vspd,obj)){
     while(!place_meeting(x,y+sign(vspd),obj)){
-        y+=+sign(vspd);
+        y+=sign(vspd);
     }
     vspd=0;
 }
