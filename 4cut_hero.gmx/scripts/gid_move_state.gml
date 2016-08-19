@@ -1,24 +1,27 @@
 ///gid_move_state()
-if(!place_meeting(x,y+1,obj_solid)){
+get_input();
+
+if(!place_meeting(x,y+1,obj_solid_mask)){
     vspd+=grav;
     
-    if(vspd<-6 && up_relese==true){
+    if(vspd<-6 && up_release){
         vspd = -6;
     }
 } else{
     vspd = 0;
+    
     if(up){
         vspd =-16;
     }
+    
     if(hspd!=0){
-        sprite_index = spr_gid_toben_walk;
+        sprite_index = spr_gid_basic_walk;
         image_speed = .3;
     }else{
-        sprite_index = spr_gid_toben_idle;
+        sprite_index = spr_gid_basic_idle;
+        image_speed = .1;
     }
 }
-
-move(obj_solid);
 
 if(right || left){
     hspd +=(right -left)*acc;
@@ -32,4 +35,6 @@ if(right || left){
 if(hspd!=0) {
     image_xscale = sign(hspd);
 }
+
+move(obj_solid_mask);
 

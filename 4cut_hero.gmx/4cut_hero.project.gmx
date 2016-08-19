@@ -13,13 +13,19 @@
       <sprite>sprites\spr_dirt</sprite>
       <sprite>sprites\spr_solid</sprite>
       <sprite>sprites\sprite6</sprite>
+      <sprite>sprites\spr_pointer</sprite>
     </sprites>
     <sprites name="Gid_Toben">
       <sprite>sprites\spr_gid_toben_idle</sprite>
       <sprite>sprites\spr_gid_toben_walk</sprite>
+      <sprite>sprites\spr_gid_basic_idle</sprite>
+      <sprite>sprites\spr_gid_basic_walk</sprite>
     </sprites>
     <sprites name="Helper_Sprite">
-      <sprite>sprites\spr_maks</sprite>
+      <sprite>sprites\spr_player_mask</sprite>
+      <sprite>sprites\spr_solid_mask</sprite>
+      <sprite>sprites\spr_brick</sprite>
+      <sprite>sprites\spr_brick_inner</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -35,7 +41,13 @@
     <scripts name="Gid_Toben">
       <script>scripts\gid_move_state.gml</script>
     </scripts>
+    <scripts name="Menu_Script">
+      <script>scripts\scr_menu.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_arcade</font>
+  </fonts>
   <objects name="objects">
     <objects name="Obj_Jena_Storm">
       <object>objects\obj_jena_storm</object>
@@ -44,6 +56,7 @@
       <object>objects\obj_solid</object>
       <object>objects\obj_dirt</object>
       <object>objects\obj_intro</object>
+      <object>objects\obj_menu</object>
     </objects>
     <objects name="Obj_Jid_Toben">
       <object>objects\obj_gid_toben</object>
@@ -51,10 +64,17 @@
     <objects name="Obj_Helper">
       <object>objects\obj_mask</object>
     </objects>
+    <objects name="Obj_Player">
+      <object>objects\obj_player_mask</object>
+      <object>objects\obj_solid_mask</object>
+      <object>objects\obj_brick</object>
+      <object>objects\obj_view</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
     <room>rooms\rm_one</room>
+    <room>rooms\rm_intro</room>
+    <room>rooms\rm_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
